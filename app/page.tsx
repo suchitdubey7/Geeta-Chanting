@@ -6,6 +6,7 @@
 
 import { useState, useCallback } from "react";
 import Header from "@/app/components/Header";
+import CountdownTimer from "@/app/components/CountdownTimer";
 import UploadBox from "@/app/components/UploadBox";
 import FrameSelector from "@/app/components/FrameSelector";
 import PreviewCanvas from "@/app/components/PreviewCanvas";
@@ -47,8 +48,13 @@ export default function HomePage() {
       {/* ── Header ─────────────────────────────────────────────────────── */}
       <Header />
 
+      {/* ── Countdown banner ───────────────────────────────────────────── */}
+      <div className="w-full max-w-lg mx-auto px-4 pt-4">
+        <CountdownTimer />
+      </div>
+
       {/* ── Main content ───────────────────────────────────────────────── */}
-      <main className="flex-1 w-full max-w-lg mx-auto px-4 py-6 space-y-6">
+      <main className="flex-1 w-full max-w-lg mx-auto px-4 py-4 space-y-6">
 
         {/* ── Step indicator ─────────────────────────────────────────── */}
         <StepIndicator current={step} />
