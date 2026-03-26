@@ -63,8 +63,23 @@ export default function HomePage() {
             />
             <UploadBox onImageSelected={handleImageSelected} />
 
+            {/* Event info card */}
+            <div className="rounded-xl bg-gradient-to-br from-orange-50 to-yellow-50 border border-orange-200 px-4 py-3 text-sm text-orange-800 space-y-2">
+              <p className="font-bold text-orange-900">🏆 Guinness World Record Attempt</p>
+              <p className="text-orange-700">1,08,000 participants chanting Bhagavad Gita Chapter 15 simultaneously — by Chinmaya Mission USA.</p>
+              <p className="text-orange-600 font-medium">📅 9 May 2026 &nbsp;·&nbsp; 🕖 7:30 PM IST</p>
+              <a
+                href="https://chinmaya75.org/amrit/cvstudents"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-2.5 rounded-xl mt-1 transition-colors shadow"
+              >
+                🔗 Register Free (Indian Students)
+              </a>
+            </div>
+
             {/* Tips */}
-            <div className="rounded-xl bg-orange-50 border border-orange-200 px-4 py-3 text-sm text-orange-700 space-y-1">
+            <div className="rounded-xl bg-white border border-orange-100 px-4 py-3 text-sm text-orange-700 space-y-1">
               <p className="font-semibold">💡 Tips for best results</p>
               <p>• Use a square or portrait photo</p>
               <p>• Ensure your face is centred</p>
@@ -159,8 +174,16 @@ export default function HomePage() {
       </main>
 
       {/* ── Footer ─────────────────────────────────────────────────────── */}
-      <footer className="text-center py-4 text-xs text-orange-400 border-t border-orange-100">
-        🕉️ वैश्विक गीता पाठ कार्यक्रम · Chapter 15 · 8 May
+      <footer className="text-center py-4 px-4 text-xs text-orange-400 border-t border-orange-100 space-y-1">
+        <p>🕉️ Gita Samarpan · Chinmaya Mission USA · 9 May 2026</p>
+        <a
+          href="https://chinmaya75.org/amrit/cvstudents"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-500 underline"
+        >
+          chinmaya75.org/amrit/cvstudents
+        </a>
       </footer>
     </div>
   );

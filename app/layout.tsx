@@ -2,18 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "वैश्विक गीता पाठ – Frame Generator",
+  title: "Gita Samarpan – Campaign Frame Generator",
   description:
-    "Create your personalised campaign frame for the Geeta Chanting Mahotsav – Chapter 15 · 8 May",
+    "Create your campaign frame for Gita Samarpan – Chinmaya Mission USA's Guinness World Record attempt. 1,08,000 participants chanting Bhagavad Gita Chapter 15. 9 May 2026 · 7:30 PM IST. Free for Indian students.",
   openGraph: {
-    title: "वैश्विक गीता पाठ कार्यक्रम – I'm Participating",
-    description: "Generate your Geeta Chanting campaign frame in Hindi or English.",
-    siteName: "Geeta Chanting Frame",
+    title: "Gita Samarpan – I'm Participating! 🏆",
+    description:
+      "Join Chinmaya Mission USA's Guinness World Record attempt – 1,08,000 people chanting Gita Chapter 15 simultaneously. 9 May 2026. Register free: chinmaya75.org/amrit/cvstudents",
+    siteName: "Gita Samarpan Frame",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Geeta Chanting Mahotsav – Frame Generator",
+    title: "Gita Samarpan – Guinness World Record Attempt",
+    description: "Generate your campaign frame and help spread the word!",
   },
 };
 

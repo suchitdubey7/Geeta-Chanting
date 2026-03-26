@@ -10,10 +10,16 @@ interface ActionButtonsProps {
 }
 
 export default function ActionButtons({ compositedDataUrl }: ActionButtonsProps) {
+  const REGISTER_URL = "https://chinmaya75.org/amrit/cvstudents";
+
   const shareText = encodeURIComponent(
-    "मैं वैश्विक गीता पाठ कार्यक्रम – अध्याय 15 में सहभागी हूँ! 🙏\n" +
-    "I'm participating in the Geeta Chanting Mahotsav – Chapter 15! 🙏\n" +
-    "8 May | #GeetaChanting #VaishvikGeetaPath"
+    "🏆 मैं वैश्विक गीता पाठ कार्यक्रम (Gita Samarpan) में सहभागी हूँ! 🙏\n\n" +
+    "Chinmaya Mission USA is attempting a Guinness World Record —\n" +
+    "1,08,000 participants chanting Bhagavad Gita Chapter 15 simultaneously!\n\n" +
+    "📅 9 May 2026 · 🕖 7:30 PM IST\n" +
+    "✅ FREE for Indian students & alumni\n\n" +
+    "👉 Register here: " + REGISTER_URL + "\n\n" +
+    "#GitaSamarpan #GeetaChanting #ChinmayaMission #GuinnessRecord #BhagavadGita"
   );
 
   const handleDownload = () => {
@@ -35,11 +41,10 @@ export default function ActionButtons({ compositedDataUrl }: ActionButtonsProps)
   };
 
   const handleInstagram = () => {
-    // Instagram doesn't support direct web share; guide user
     if (compositedDataUrl) {
-      downloadImage(compositedDataUrl, "geeta-chanting-frame.png");
+      downloadImage(compositedDataUrl, "gita-samarpan-frame.png");
       alert(
-        "📲 Image downloaded!\n\nOpen Instagram → Create Post → Select the downloaded image."
+        "📲 Image downloaded!\n\nOpen Instagram → Create Post → Select the downloaded image.\n\nDon't forget to add the registration link in your bio or caption:\nchinmaya75.org/amrit/cvstudents"
       );
     }
   };
